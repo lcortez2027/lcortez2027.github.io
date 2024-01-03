@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Overpass+Mono:wght@600&family=Playfair+Display:wght@600&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <title>Bio Laboratory</title>
+    <style>
+    .container {
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        width: 80%;
+        cursor: pointer;
+        margin: 30px 0;
+    }
+    .menu-icon {
+        width: 20%;
+        cursor: pointer;
+        display: none;
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: olivedrab;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    .snav{
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        text-align: center;
+    }
+    .snav a {
+        text-decoration: none;
+        color: antiquewhite;
+        font-size: 25px;
+        justify-content: space-between;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 7% 0;
+        white-space: nowrap;
+    }  
+    p {
+        font-size: 30px;
+        color: black;
+        font-weight: 100;
+        font-family: 'Red Hat Mono', monospace; 
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: justify;
+    }
+    .footer {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        color: antiquewhite;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fb {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        padding: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        color: antiquewhite;
+    }
+    @media only screen and (max-width:800px){
+            nav ul {
+                width: 100%;
+                background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                margin-right: 0;
+            }
+            nav ul li {
+                display:inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                color:white;
+            }
+            .menu-icon {
+                display:block;
+            }
+            #menuList {
+                overflow: hidden;
+                transition: 0.5s;
+            }
+            p {
+                font-size: medium;
+            }
+            .snav a {
+                font-size: medium;
+            }
+            h2 {
+                font-size: 50px;
+            }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Logo.jpg" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Academics.html">Academics</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                    <li><a href="Facilities.html">Facilities</a></li>
+                    <li><a href="Extra_Curriculars.html">Extra Curriculars</a></li>
+                </ul>
+            </nav>
+            <img src="menuiconn.jpg" alt="menuicon" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <div class="snav">
+        <a href="Bio Laboratory.html">|&nbsp;&nbsp;&nbsp;Introduction&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
+        <a href="DSSL.html">|&nbsp;&nbsp;&nbsp;Digestive_System_Simulation_Lab&nbsp;&nbsp;&nbsp;|</a>
+    </div>
+
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hey there, Science enthusiast! Do you intend to enroll in a course on Biology in the future? Or do you find the movement of the digestive system interesting? Would you perhaps also be interested in learning how our bodies acquire nutrients? If your answer is a YES, well this is the ideal place for you! Heaf-Delge University invites you with open arms to explore the exciting and extensive world of Biology — a place of curiosity, excellence, and adventures! BUT WAIT, HOLD ON! Before we venture into our journey in exploring and traversing the vast beauty and quintessence of Biology, let us first have an overview of our laboratory page:
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A part of Heaf-Delge University's fervent goals for its bright and inquisitive students is to provide the top-notch education meant to stimulate and cultivate one's interest in the massive and fascinating world of Science. The laboratory page seeks to showcase and impart enlightenments, information, observations, and documentations that the students can look back from time to time through various discussions, observations, and experiments which correlate to how the body functions with its various systems!  Thus, the laboratory page desires to add fuel to the burning curiosity, interest, and passion of our dear students by providing a glimpse of the realm of Biology. Prepare as we embark ourselves in our journey of exploring and studying the perspective of Biology! In 5...4...3...2...1... We're going on a trip in our favorite rocket ship, zooming through the sky, Little Einstein!
+    </p>
+    <p>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starting off with the digestive system, our bodies require food as fuel for development, repair, and energy. Foods are broken down into their most basic forms via the digestive system, such as glucose (sugars), amino acids (which form protein), or fatty acids (which produce lipids). The small intestine then absorbs the broken-down food into the bloodstream, where the nutrients are subsequently transported to every cell in the body. The mouth is where the digestive tract starts and ends at the anus. It resembles a lengthy, muscular tube that can reach a length of ten meters, to which the digestive organs are connected. Being the pathway through which nutrients enter the body, the digestive system is vital to your general well-being. A number of unpleasant symptoms, including indigestion, bloating, and stomach discomfort can arise from digestive health issues. Moreover, eating the wrong food may leave you malnourished, which can have a harmful and undesired effect on your health and general wellness. Our bodies' nutritional needs, which are in line with what is ideal for promoting healthy growth and development as well as the restoration of damaged tissues, are under our control and awareness. Simultaneously, monitoring our food intake raises our awareness of our health. We may restrict or enhance certain food selections to improve our immune system and effectively fight illnesses that may be lurking around the corner if we have the knowledge of what our food contains and how it interacts with our body. 
+    </p>
+    <p>   
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, we present to you <a href="DSSL.html">THE SIMULATION OF THE DIGESTIVE SYSTEM!</a> This tool, meant for simulating how the digestive system functions and demonstrating and showcasing the roles that each organ acts, pledges to nourish students' minds and communicate prominent details that are very much needed to comprehend the basic functioning of the digestive system. Nonetheless, the simulation of the digestive system promotes interactiveness, excitement, thrill, and curiosity through its experiments that are to be performed and enacted by the students. This is to provide engagement and amusement in the midst of learning and exploring the realm and massive areas of Biology! Worry nothing if YOU GOT NOTHING IN YOUR BRAIN even if THAT'S WHAT PEOPLE SAY, for the simulation of the digestive system comes to the rescue, inviting you to explore the wonders of the digestive system and to inculcate further knowledge and enlightenment into your life!
+    </p>
+
+    <footer class="footer">
+        <table class="fb">
+            <tr>
+                <td>Copyright© Heaf-Delge University Biology Introductory®</td>
+            </tr>
+        </table>
+    </footer> 
+    <script> 
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight=="0px") {
+                menuList.style.maxHeight="130px";
+            }
+            else {
+                menuList.style.maxHeight="0px";
+            }
+        }
+        </script>
+</body>

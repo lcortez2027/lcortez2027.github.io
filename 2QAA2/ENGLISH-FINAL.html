@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Overpass+Mono:wght@600&family=Playfair+Display:wght@600&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+  <title>English</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+      gap: 20px;
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+
+    .column img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        white-space: nowrap;
+    }
+    .container-fluid {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    div {
+        display: block;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+    }
+    .logo {
+        width: 80%;
+        cursor: pointer;
+        margin: 30px 0;
+    }
+    .menu-icon {
+        width: 20%;
+        cursor: pointer;
+        display: none;
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: olivedrab;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    .bar {
+      height: 2%;
+      background: linear-gradient(to right, lightgreen, olivedrab);
+      margin-bottom: 3%;
+    }
+    .desc img {
+      display: block;
+      margin-bottom: 10%;
+      margin-top: 5%;
+      width: 100%;
+    }
+    .footer {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 3%;
+    }
+    .fb {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        padding: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        color: black;
+    }
+    .scrolling-image-container {
+        overflow: hidden;
+    }
+    .scrolling-image {
+        background-image: url("bg.png");
+        background-size: 800px;
+    }
+    @media only screen and (max-width:800px){
+            nav ul {
+                width: 100%;
+                background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                margin-right: 0;
+            }
+            nav ul li {
+                display:inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                color:white;
+            }
+            .menu-icon {
+                display:block;
+            }
+            #menuList {
+                overflow: hidden;
+                transition: 0.5s;
+            }
+            .desc img {
+              width: 302px;
+              height: 200px;
+              display: block;
+            }
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .container {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo {
+        width: 100%;
+        margin: 10px 0;
+      }
+      nav {
+        text-align: center;
+        margin-top: 10px;
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        margin: 5px;
+      }
+      .menu-icon {
+        display: none;
+      }
+      #menuList {
+        max-height: none;
+      }
+      .desc img {
+        width: 100%;
+        height: auto;
+      }
+      .column img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .footer {
+  padding: 20px 0;
+  font-family: 'Bree Serif', serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #083123;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-icons .social-icon img {
+  width: 60px; 
+  height: 60px; 
+  margin: 5px 5px;
+}
+.contact-info {
+    margin-left: 3%;
+}
+.social-icons {
+    margin-right: 3%;
+}
+  </style>
+</head>
+<body class="container-fluid">
+  <div class="container">
+      <div class="navbar">
+          <img src="Logo.jpg" alt="logo" class="logo">
+          <nav>
+              <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CONTACT-US-FINAL.html">Contact Us</a></li>
+                <li><a href="ACADEMICS-FINAL.html">Academics</a></li>
+                <li><a href="ABOUT-US-FINAL.html">About Us</a></li>
+                <li><a href="EXTRA-CURRICULARS-FINAL.html">Extra Curriculars</a></li>
+              </ul>
+          </nav>
+          <img src="menuiconn.jpg" alt="menuicon" class="menu-icon" onclick="togglemenu()">
+      </div>
+  </div>
+  <div class="bar">
+    &nbsp;
+  </div>
+  <div class="scrolling-image-container">
+    <div class="scrolling-image">
+      <div class="container">
+      <div class="desc">
+        <img src="desc.png" height="500" width="929">
+      </div>
+      </div>
+  <div class="container">
+    <div class="column">
+      <img src="sonnet 1.png" alt="Sonnet 1">
+    </div>
+    <div class="column">
+      <img src="sonnet 2.png" alt="Sonnet 2">
+      <audio controls autoplay muted>
+        <source src="New Recording 22.m4a">
+      </audio>
+    </div>
+    <div class="column">
+      <img src="sonnet 3.png" alt="Sonnet 3">
+      <audio controls autoplay muted>
+        <source src="Krisha - petrarchan.m4a">
+      </audio>
+    </div>
+    <div class="column">
+      <img src="sonnet 4.png" alt="Sonnet 4">
+    </div>
+    <div class="column">
+      <img src="sonnet 5.png" alt="Sonnet 5">
+      <audio controls autoplay muted>
+        <source src="petrarchan.aac">
+      </audio>
+    </div>
+    <div class="column">
+      <img src="sonnet 6.png" alt="Sonnet 6">
+    </div>
+  </div>
+</div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h4>Email: HDU_HQ@hq.hdu.nbl</h4>
+        <h4>Contact Info: 1234567890</h4>
+        <h6>HEAF-DELGE UNIVERSITY SYSTEM</h6>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <h7>&copy; Heaf Delge University Hub. All Rights Reserved.</h7>
+    </div>
+  </footer>
+  
+<script> 
+    var menuList=document.getElementById("menuList");
+    menuList.style.maxHeight="0px";
+    function togglemenu(){
+        if (menuList.style.maxHeight=="0px") {
+            menuList.style.maxHeight="130px";
+        }
+        else {
+            menuList.style.maxHeight="0px";
+        }
+    }
+    </script>
+    
+</body>
+</html>

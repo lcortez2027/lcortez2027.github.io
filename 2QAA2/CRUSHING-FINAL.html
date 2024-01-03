@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Overpass+Mono:wght@600&family=Playfair+Display:wght@600&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <title>Bio Laboratory</title>
+    <style>
+    .container {
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        width: 80%;
+        cursor: pointer;
+        margin: 30px 0;
+    }
+    .menu-icon {
+        width: 20%;
+        cursor: pointer;
+        display: none;
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: olivedrab;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    .snav{
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        text-align: center;
+    }
+    .snav a {
+         text-decoration: none;
+        color: rgb(0, 87, 61);
+        font-size: 25px;
+        justify-content: space-between;
+        font-family:'Bree Serif', serif;
+    }
+    .tnav{
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(rgb(100, 163, 49),rgb(143, 192, 111));
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .tnav a {
+        text-decoration: none;
+        color: rgb(0, 87, 61);
+        font-size: 25px;
+        justify-content: space-between;
+        font-family:'Bree Serif', serif;
+        background: linear-gradient(rgb(100, 163, 49),rgb(143, 192, 111));
+    }
+    .row {
+        align-items: center;
+        justify-content:space-around;
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row2 {
+        align-items: center;
+        justify-content:space-around;
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .col-1{
+        max-width:none;
+        text-align: center;
+    }
+    .col-2{
+        max-width:none;
+        text-align: center;
+    }
+    h2 {
+        font-size: 60px;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        color: #042e1a;
+    }
+    h3 {
+        width: 75%;
+        align-self: center;
+        margin-left: 11%;
+        color:#024b1e;
+        text-align: justify;
+        font-family: 'Overpass Mono', monospace;
+        margin-bottom: 3%;
+        font-size: 25px;
+        margin-top: 2%;
+    }
+    .footer {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fb {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        padding: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+       
+    }
+    @media only screen and (max-width:800px){
+            nav ul {
+                width: 100%;
+                background: linear-gradient(rgb(38, 80, 4),rgb(88, 183, 25));
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                margin-right: 0;
+            }
+            nav ul li {
+                display:inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                color:white;
+            }
+            .menu-icon {
+                display:block;
+            }
+            #menuList {
+                overflow: hidden;
+                transition: 0.5s;
+            }
+            p {
+                font-size: medium;
+            }
+            .snav a {
+                font-size: medium;
+            }
+            .tnav a {
+                font-size: medium;
+            }
+            h2 {
+                font-size: 50px;
+            }
+            .col-1 {
+                margin-bottom: 2%;
+            }
+    }
+    .footer {
+  padding: 20px 0;
+  font-family: 'Bree Serif', serif;
+}
+.row2 img{
+    margin-left: -8%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #083123;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-icons .social-icon img {
+  width: 60px; 
+  height: 60px; 
+  margin: 5px 5px;
+}
+.contact-info {
+    margin-left: 3%;
+}
+.social-icons {
+    margin-right: 3%;
+}
+.scrolling-image-container {
+        overflow: hidden;
+        font-family: 'Bree Serif', serif;
+    }
+    .scrolling-image {
+        background-image: url("bg.png");
+        background-size: 800px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Logo.jpg" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="CONTACT-US-FINAL.html">Contact Us</a></li>
+                    <li><a href="ACADEMICS-FINAL.html">Academics</a></li>
+                    <li><a href="ABOUT-US-FINAL.html">About Us</a></li>
+                    <li><a href="EXTRA-CURRICULARS-FINAL.html">Extra Curriculars</a></li>
+                </ul>
+            </nav>
+            <img src="menuiconn.jpg" alt="menuicon" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <div class="snav">
+        <a href="BIO-LAB-PAGE-FINAL.html">|&nbsp;&nbsp;&nbsp;Introduction&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
+        <a href="DSSL-FINAL.html">|&nbsp;&nbsp;&nbsp;Digestive_System_Simulation_Lab&nbsp;&nbsp;&nbsp;|</a>
+    </div>
+
+    <div class="tnav">
+        <a href="CRUSHING-FINAL.html">|&nbsp;&nbsp;&nbsp;Crushing_Stage&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
+        <a href="TRANSFERRING-FINAL.html">|&nbsp;&nbsp;&nbsp;Transferring_Stage&nbsp;&nbsp;&nbsp;|</a>
+    </div>
+    <div class="scrolling-image-container">
+        <div class="scrolling-image">
+    <h2>CRUSHING STAGE</h2>
+    <h3>
+    For our Biology 1 subject, we were tasked to perform an experiment that has a correlation with the digestive system. In the first step of the experiment, which is to place the bananas and crackers inside the zip lock bag, we observed that ingestion was simulated. Ingestion is the act of eating or feeding food. 
+
+    We noticed that the addition of water imitates the process of chemical digestion in the mouth, wherein food is chemically digested with saliva that is delivered by the salivary glands. Salivary amylase, which digests glucose, is also present in this process. Here, food is also broken down into smaller pieces through chewing. We also noticed that the zip lock bag both represents the mouth for ingestion and the stomach for digestion. The addition of water helped in the breaking down of food inside the zip lock bag; hence, we observed that this can be compared to the saliva which helps to moisten the food for easy swallowing.
+    
+    The third step of the experiment is the crushing of food inside the zip lock bag. As per our observation, the crushing of food simulates the muscles inside the stomach that churn, mush, and digest the food before it mixes with digestive juices. 
+    </h3>
+
+    <div class="row">
+        <div class="col-1">
+            <img src="crushing1.jpg" alt="crushing stage">
+        </div>
+        <div class="col-2">
+            <img src="crushing2.jpg" alt="crushing stage">
+        </div>
+    </div>
+
+    <h3>
+        Furthermore, we noticed that the addition of orange juice represents the stomach's secretion of gastric juice which converts the food into chyme. This gastric juice, containing hydrochloric acid (HCl) and pepsin, or protein-digesting enzyme, kills bacteria and digests protein. The four major kinds of biomolecules are carbohydrates, lipids, nucleic acids, and proteins. These four compounds are found in the foods you eat. 
+    </h3>
+
+    <div class="row2">
+        <img src="crushing3.jpg" alt="crushing">
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="contact-info">
+            <h4>Email: HDU_HQ@hq.hdu.nbl</h4>
+            <h4>Contact Info: 1234567890</h4>
+            <h6>HEAF-DELGE UNIVERSITY SYSTEM</h6>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <h7>&copy; Heaf Delge University Hub. All Rights Reserved.</h7>
+        </div>
+      </footer>
+</body>

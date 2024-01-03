@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Overpass+Mono:wght@600&family=Playfair+Display:wght@600&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <title>BIO LABORATORY</title>
+    <style>
+    .container {
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        width: 80%;
+        cursor: pointer;
+        margin: 30px 0;
+    }
+    .menu-icon {
+        width: 20%;
+        cursor: pointer;
+        display: none;
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: olivedrab;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    .snav{
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        text-align: center;
+    }
+    .snav a {
+        text-decoration: none;
+        color: rgb(0, 87, 61);
+        font-size: 25px;
+        justify-content: space-between;
+        font-family:'Bree Serif', serif;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 7% 0;
+        white-space: nowrap;
+    }  
+    p {
+        font-size: 30px;
+        color: black;
+        font-weight: 100;
+        font-family: 'Red Hat Mono', monospace; 
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: justify;
+    }
+    .footer {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fb {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        padding: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        color: white;
+    }
+    @media only screen and (max-width:800px){
+            nav ul {
+                width: 100%;
+                background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                margin-right: 0;
+            }
+            nav ul li {
+                display:inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                color:white;
+                font-family: 'Bree Serif', serif;
+            }
+            .menu-icon {
+                display:block;
+            }
+            #menuList {
+                overflow: hidden;
+                transition: 0.5s;
+            }
+            p {
+                font-size: medium;
+            }
+            .snav a {
+                font-size: medium;
+            }
+            h2 {
+                font-size: 50px;
+            }
+            .content img {
+                width: 100%;
+                height: auto;
+            }
+    
+    }
+    .content img {
+        width: 100%;
+        display: block;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .content {
+        width: 75%;
+        align-self: center;
+        margin-left: 11%;
+        color:#024b1e;
+        text-align: justify;
+        font-family: 'Overpass Mono', monospace;
+        margin-bottom: 3%;
+    }
+    .footer {
+  padding: 20px 0;
+  font-family: 'Bree Serif', serif;
+}
+.bar {
+      height: 2%;
+      background: linear-gradient(to right, lightgreen, olivedrab);
+      margin-bottom: 3%;
+    }
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #083123;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-icons .social-icon img {
+  width: 60px; 
+  height: 60px; 
+  margin: 5px 5px;
+}
+.contact-info {
+    margin-left: 3%;
+}
+.social-icons {
+    margin-right: 3%;
+}
+.scrolling-image-container {
+        overflow: hidden;
+    }
+    .scrolling-image {
+        background-image: url("bg.png");
+        background-size: 800px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Logo.jpg" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="CONTACT-US-FINAL.html">Contact Us</a></li>
+                    <li><a href="ACADEMICS-FINAL.html">Academics</a></li>
+                    <li><a href="ABOUT-US-FINAL.html">About Us</a></li>
+                    <li><a href="EXTRA-CURRICULARS-FINAL.html">Extra Curriculars</a></li>
+                </ul>
+            </nav>
+            <img src="menuiconn.jpg" alt="menuicon" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <div class="bar">
+        &nbsp;
+      </div>
+    <div class="scrolling-image-container">
+        <div class="scrolling-image">
+    <div class="content">
+    <h4>
+        <img src="img1.jpg" width="200" height="450">
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to the enriching academic haven that is Heaf-Delge University, where students thrive in an environment thoughtfully designed for their growth. Three state-of-the-art academic buildings stand proudly, offering a dynamic space for learning. Immerse yourself in the world of sciences and technology with cutting-edge laboratories, while our libraries provide a haven for knowledge seekers. Amidst this academic landscape, discover comfort in modern amenities such as well-appointed comfort rooms. Heaf-Delge University doesn't just cultivate minds; it nurtures a harmonious blend of nature and modernity, providing students with inspiring sceneries that seamlessly balance the natural and contemporary aspects of their educational journey. Amidst the academic tapestry of three cutting-edge buildings, laboratories, and libraries, verdant splendor graces every corner of the campus. Here, lush greenery surrounds students, creating serene retreats that invite relaxation and rejuvenation. Heaf-Delge University is not just a place of intellectual growth but a sanctuary where students can unwind and find solace in the embrace of nature, harmoniously woven into the modern fabric of their educational journey.
+        </h4>
+        <br>
+        <h4>
+        <img src="img3.jpg" width="200" height="650">
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore Heaf-Delge University's dynamic extracurricular scene in our online hub, where various clubs cater to diverse interests. Dive into the competitive spirit with volleyball and basketball clubs or unleash your creativity in our vibrant arts clubs. Beyond academics, our extracurricular landscape fosters connections, cultivates talents, and enriches your university experience. Join us in this lively community where exploration knows no bounds!
+        </h4
+        </div>
+</div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h4>Email: HDU_HQ@hq.hdu.nbl</h4>
+        <h4>Contact Info: 1234567890</h4>
+        <h6>HEAF-DELGE UNIVERSITY SYSTEM</h6>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <h7>&copy; Heaf Delge University Hub. All Rights Reserved.</h7>
+    </div>
+  </footer>
+</body>

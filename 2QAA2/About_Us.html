@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Overpass+Mono:wght@600&family=Playfair+Display:wght@600&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+    <style>
+    .container-fluid {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    div {
+        display: block;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+    }
+    .logo {
+        width: 80%;
+        cursor: pointer;
+        margin: 30px 0;
+    }
+    .menu-icon {
+        width: 20%;
+        cursor: pointer;
+        display: none;
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: olivedrab;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    .bar{
+        height:2%;
+        background-color: green;
+    }
+    .header{
+        margin-left: auto;
+        margin-right: auto;
+        background-color:burlywood;
+        text-align: center;
+    }
+    .bod{
+        background-color:burlywood;
+    }
+    .row{
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 1%;
+        display: block;
+    }
+    img{
+        border-radius: 10%;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .row h2 {
+        font-size: 50px;
+        font-family: 'Playfair Display', serif;
+        text-align: left;
+    }
+    .row h3 {
+        font-size: 25px;
+        color: #28231D;
+        font-family: 'Bree Serif', serif;
+        text-align: justify;
+    }
+    .row h4 {
+        font-size: 19px;
+        font-family: 'Overpass Mono', monospace;
+    }
+    .row p {
+        font-size: 20px;
+        color: black;
+    }
+    .img-hover-zoom {
+        height: 300px;
+    }
+    .img-hover-zoom img {
+        transition: transform .5s ease;
+    }
+    .img-hover-zoom:hover img {
+        transform: scale(1.5);
+    }
+    .r {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        padding: 2%;
+        padding-bottom: 7%;
+        animation: fadeIn 5s;
+        flex-wrap: wrap;
+    }
+    .col-1 {
+        max-width: none;
+    }
+    .col-2 {
+        max-width: none;
+    }
+    .teachers {
+        display: flex;
+        justify-content:space-evenly;
+        align-items:baseline;
+        margin-left: auto;
+        margin-right: auto; 
+        flex-wrap: wrap;
+    }
+    .col-md-1 {
+        max-width: none;
+    }
+    .col-md-2 {
+        max-width: none;
+    }
+    .col-md-3 {
+        max-width: none;
+    }
+    .col-md-4 {
+        max-width: none;
+    }
+    .footer {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fb {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        padding: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        color: black;
+    }
+    .scrolling-image-container {
+        overflow: hidden;
+    }
+    .scrolling-image {
+        background-image: url("bg_book.jpg");
+        background-size: 800px;
+    }
+    .teachers img{
+        width: 250px;
+    }
+    .teachers p{
+        text-align: justify;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity:1;}
+    }
+    @media only screen and (max-width:800px){
+            nav ul {
+                width: 100%;
+                background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                margin-right: 0;
+            }
+            nav ul li {
+                display:inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                color:white;
+            }
+            .menu-icon {
+                display:block;
+            }
+            #menuList {
+                overflow: hidden;
+                transition: 0.5s;
+            }
+            .row h2 {
+                font-size: 52px;
+            }
+    }
+    @media only screen and (max-width:700px){
+            .teachers img {
+                width: 300px;
+            }
+            .r img{
+                width: 300px;
+            }
+            .r h1{
+                width: 30;
+            }
+    }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="container">
+        <div class="navbar">
+            <img src="Logo.jpg" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Academics.html">Academics</a></li>
+                    <li><a href="Facilities.html">Facilities</a></li>
+                    <li><a href="Extra_Curriculars.html">Extra Curriculars</a></li>
+                </ul>
+            </nav>
+            <img src="menuiconn.jpg" alt="menuicon" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <div class="bar">
+        &nbsp;
+    </div>
+
+    <div class="bod">
+    <div class="row">
+        <div class="header"><h1><span class="nowrap"></span>HISTORY</h1></div>
+        <div>
+            <h2>
+                Founding Years
+            </h2>
+            <br>
+            <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;Heaf-Delge University, with a rich and storied history, traces its roots back to the late 19th century. Established in 1885 by visionary educators Dr. Jonathan Heaf and Professor Eleanor Delge, the institution began as a modest academy dedicated to providing quality education in the arts and sciences. 
+            </h3>
+            <br>
+            <h2>
+                Expansion Stage
+            </h2>
+            <br>
+            <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;Over the decades, Heaf-Delge University expanded its academic offerings and campus infrastructure, evolving into a comprehensive institution known for its commitment to innovation and academic excellence. The university weathered the challenges of different eras, adapting to societal changes and emerging as a leading center for research and learning. 
+            </h3>
+            <br>
+            <h2>
+                Modern Times
+            </h2>
+            <br>
+            <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;Today, Heaf-Delge University stands as a testament to its founders' vision, fostering a diverse and vibrant academic community that continues to shape the minds of future leaders across various disciplines.
+            </h3>
+        </div>
+    </div>
+
+    <div class="r">
+        <div class="col-1">
+                <h1>Admin Chart</h1>
+        </div>
+        <div class="col-2">
+                <img src="adminchart.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>Teachers</h2>
+    </div>
+
+    <div class="teachers">
+        <div class="col-md-1">
+            <img src="mr_churb.jpg">
+            <h3>Name: Mr. George Churb</h3>
+            <h3>Subject: Mathematics </h3>
+            <p>Meet the venerable Mr. George Churb, a stalwart in the mathematics department at Heaf-Delge University. With over a decade of dedicated service, Mr. Churb has become an integral part of our academic tapestry. His unwavering passion lies not just in teaching mathematics but in cultivating a spirit of mathematical excellence.
+            </p>
+        </div>
+        <div class="col-md-2">
+            <img src="ms_berbi.jpg">
+            <h3>Name: Ms. Peerfec Berbi</h3>
+            <h3>Subject: Physical Education</h3>
+            <p>Meet the dynamic Ms. Peerfec Berbi, a beacon of inspiration at Heaf-Delge University. As a dedicated gymnastics instructor, she not only imparts the fundamentals of the sport but also instills a love for movement, fitness, and overall well-being in her students. Join Ms. Peerfec Berbi on a journey of physical empowerment and educational excellence, where each lesson is a step towards a healthier, more active lifestyle.   
+            </p>
+        </div>
+        <div class="col-md-3">
+            <img src="mr_aurk.jpg">
+            <h3>Name: Mr. Aurkto Porsche</h3>
+            <h3>Subject: Biology</h3>
+            <p>Welcome to the world of biology with Mr. Aurkto Porsche, an esteemed educator at Heaf-Delge University. With a wealth of knowledge and a passion for the intricacies of life sciences, Mr. Porsche is dedicated to cultivating a deep understanding of biology in his students. Join Mr. Aurkto Porsche on an educational journey where his experience and passion converge to make each biology class an enriching exploration of the living world.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img src="piggy.jpg">
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <table class="fb">
+            <tr>
+                <td>Copyright© Heaf-Delge University About Us Page®</td>
+            </tr>
+        </table>
+    </footer> 
+    <script> 
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight=="0px") {
+                menuList.style.maxHeight="130px";
+            }
+            else {
+                menuList.style.maxHeight="0px";
+            }
+        }
+        </script>
+</body>
+</html>

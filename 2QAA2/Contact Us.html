@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Overpass+Mono:wght@600&family=Playfair+Display:wght@600&family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+    <style>
+    .container {
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        width: 80%;
+        cursor: pointer;
+        margin: 30px 0;
+    }
+    .menu-icon {
+        width: 20%;
+        cursor: pointer;
+        display: none;
+    }
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: olivedrab;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    .bar{
+        width: 100%;
+        height: 5%;
+        background-color: forestgreen;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 7% 0;
+        white-space: nowrap;
+    }
+    .row h2 {
+        font-size: 40px;
+        font-family: 'Playfair Display', serif;
+    }
+    .row h3 {
+        font-size: 25px;
+        color: olivedrab;
+        font-weight: 100;
+        margin: 5% 0 3%;
+        font-family: 'Bree Serif', serif;
+    }
+    .row p {
+        font-size: 19px;
+        color: black;
+        font-weight: 100;
+        font-family: 'Red Hat Mono', monospace;    
+    }
+    .col-md-1{
+        margin-right: 0%;
+        margin-left: 5%;
+    }
+    .col-md-2{
+        margin-right: 20%;
+        margin-left: 5%;
+
+    }
+    .footer {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        height: 5%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fb {
+        background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+        padding: 7px;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        color: black;
+    }
+        @media only screen and (max-width:800px){
+            nav ul {
+                width: 100%;
+                background: linear-gradient(rgb(143, 192, 111), rgb(100, 163, 49));
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                margin-right: 0;
+            }
+            nav ul li {
+                display:inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                color:white;
+            }
+            .menu-icon {
+                display:block;
+            }
+            #menuList {
+                overflow: hidden;
+                transition: 0.5s;
+            }
+    }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="container">
+        <div class="navbar">
+            <img src="Logo.jpg" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Academics.html">Academics</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                    <li><a href="Facilities.html">Facilities</a></li>
+                    <li><a href="Extra_Curriculars.html">Extra Curriculars</a></li>
+                </ul>
+            </nav>
+            <img src="menuiconn.jpg" alt="menuicon" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+    <div class="bar">
+        &nbsp;
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <h2><span class="nowrap">ADDRESS</span></h2>
+
+            <h3><span class="nowrap">HDU Amsterdam</span></h3>
+            <p><span class="nowrap">Nieuwezijds Voorburgwal, 147,</span></p>
+            <p><span class="nowrap">1012 RJ Amsterdam, </span></p>
+            <p><span class="nowrap">Netherlands</span></p>
+
+            <h3><span class="nowrap">HDU Sydney</span></h3>
+            <p><span class="nowrap">236 Pacific Hwy, Hornsby</span></p>
+            <p><span class="nowrap">NSW 2077, Sydney,</span></p>
+            <p><span class="nowrap">Australia</span></p>
+
+            <h3><span class="nowrap">HDU Toronto</span></h3>
+            <p><span class="nowrap">100 Queens Park, Toronto,</span></p>
+            <p><span class="nowrap">ON M5S 2C6, Ontario,</span></p>
+            <p><span class="nowrap">Canada</span></p>
+       
+            <h2><span class="nowrap">CONTACT NO.</span></h2>
+
+            <h3><span class="nowrap">Admission Department</span></h3>
+            <p><span class="nowrap">(263) 455-9846</span></p>
+            <p><span class="nowrap">(142) 389-0667</span></p>
+
+            <h3><span class="nowrap">Finance Department</span></h3>
+            <p><span class="nowrap">(096) 775-0803</span></p>
+            <p><span class="nowrap">(812) 321-4529</span></p>
+        </div>
+        <div class="col-md-2">
+            <h2><span class="nowrap">EMAIL</span></h2>
+
+            <h3><span class="nowrap">HDU HeadQuarters</span></h3>
+            <p><span class="nowrap">HDU_HQ@hq.hdu.nbl</span></p>
+
+            <h3><span class="nowrap">HDU Amsterdam</span></h3>
+            <p><span class="nowrap">HDUAmsterdam@ams.hdu.nl</span></p>
+
+            <h3><span class="nowrap">HDU Sydney</span></h3>
+            <p><span class="nowrap">HDUSydney@syd.hdu.nl</span></p>
+
+            <h3><span class="nowrap">HDU Toronto</span></h3>
+            <p><span class="nowrap">HDUToronto@tor.hdu.nl</span></p>
+        
+            <h2><span class="nowrap">SOCMEDS</span></h2>
+
+            <h3><span class="nowrap">Facebook</span></h3>
+            <p><span class="nowrap">Heaf-Delge University</span></p>
+
+            <h3><span class="nowrap">Twitter</span></h3>
+            <p><span class="nowrap">@HDU_Official</span></p>
+
+            <h3><span class="nowrap">Instagram</span></h3>
+            <p><span class="nowrap">HDU Head Quarters</span></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <table class="fb">
+            <tr>
+                <td>Copyright© Heaf-Delge University Contact Page®</td>
+            </tr>
+        </table>
+    </footer> 
+    <script> 
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if (menuList.style.maxHeight=="0px") {
+                menuList.style.maxHeight="130px";
+            }
+            else {
+                menuList.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>

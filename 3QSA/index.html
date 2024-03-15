@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Neon Cluck - HOME</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pixelify Sans', Arial, sans-serif;
+        }
+
+        body {
+            margin: 0; /* Reset the default margin */
+            background-image: url('spooky.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:2%;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80%;
+        }
+
+        a {
+            padding: 20px 60px;
+            margin: 20px;
+            font-size: 2em;
+            border: 2px solid black;
+            font-family: "Anta", sans-serif;
+            background: linear-gradient(rgb(17, 84, 160), rgb(50, 110, 189),  rgb(123, 79, 194), rgb(100, 51, 163));
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            margin-top: -165%;
+            text-decoration: none;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            background-color: #008000;
+        }
+
+        #bgimg3 {
+            width: 1920px; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="bgsong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="button-container">
+        <a href="maingame.html">Play</a>
+        <a href="mainabout.html">About</a>
+    </div>
+
+    
+</body>
+</html>
